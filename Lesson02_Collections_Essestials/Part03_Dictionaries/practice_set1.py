@@ -11,11 +11,11 @@ False
 '''
 
 # Question 3
-# def get_user_bio(user):
-#     return user.get("bio", "No bio available.")
+def get_user_bio(user):
+    return user.get("bio", "No bio available.")
 
-# print(get_user_bio({"username": "coder", "bio": "Python enthusiast"}))
-# print(get_user_bio({"username": "newbie"}))
+print(get_user_bio({"username": "coder", "bio": "Python enthusiast"}))
+print(get_user_bio({"username": "newbie"}))
 
 
 # Question 4
@@ -30,15 +30,15 @@ False
 '''
 
 # Question 6
-# def get_total_engagement(post):
-#     likes = post.get("likes", 0)
-#     shares = post.get("shares", 0)
-#     comments = post.get("comments", 0)
-#     return likes + shares + comments
+def get_total_engagement(post):
+    likes = post.get("likes", 0)
+    shares = post.get("shares", 0)
+    comments = post.get("comments", 0)
+    return likes + shares + comments
 
-# print(get_total_engagement({"likes": 100, "comments": 20, "shares": 10}))
-# print(get_total_engagement({"likes": 50, "comments": 5}) )
-# print(get_total_engagement({"views": 1000}))
+print(get_total_engagement({"likes": 100, "comments": 20, "shares": 10}))
+print(get_total_engagement({"likes": 50, "comments": 5}) )
+print(get_total_engagement({"views": 1000}))
 
 
 # Question 7
