@@ -34,3 +34,40 @@ print(result3 == 0) #True - numeric equality
 print(not result3) #True - falsy in boolean context
 print(result3 is None) #False - different object
 print(result3 is False) #False - different types
+
+
+# Multiple Returns - Python packs multiple returns into a tuple
+def calc_room(length, width):
+    area = length * width
+    perimeter = 2*(length+width)
+    return area, perimeter
+
+result = calc_room(10, 5)
+print(result)
+print(type(result))
+print(type(42))
+
+no_paratheses = 1,2,3
+print(type(no_paratheses))
+
+
+# unpacking
+area_result, perimeter_result = calc_room(20, 6)
+print(f"Area: {area_result}")
+print(f"Perimeter: {perimeter_result}")
+
+
+
+
+def analyze_grades(list):
+    if not list:
+        return 0,0,0,False
+    average = sum(list) / len(list)
+    highest = max(list)
+    lowest = min(list)
+    is_pass = average >= 60 
+    return average, highest, lowest, is_pass
+
+print(analyze_grades([85, 92, 78, 90]))
+print(analyze_grades([]))
+print(analyze_grades([80,80,80]))
