@@ -28,7 +28,7 @@ print(result2 == 0) # True - falsy check
 
 # 0
 # 0 is a VALID numeric value, not absence of value
-# 
+# 2
 result3 = 0
 print(result3 == 0) #True - numeric equality
 print(not result3) #True - falsy in boolean context
