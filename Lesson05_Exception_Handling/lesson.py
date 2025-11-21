@@ -16,3 +16,10 @@
 # syntax error(no semicolon)
 # for i in range(5)
 #   print i
+
+# type error
+# print("hello"+5)
+
+# attribute error
+# x=3
+# x.append(2)
